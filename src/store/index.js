@@ -71,7 +71,8 @@ export default new Vuex.Store({
         if(id === item.id) num = ind
       })
       state.allPersons.splice(num, 1)
-
+      if ( state.selectedPersonId === id ) state.selectedPersonId = null
+      
       // Clen up all relations of deleted person
       delete state.relatives[id]
       Object.keys(state.relatives).forEach(key => {

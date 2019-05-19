@@ -127,6 +127,11 @@ export default {
       })
     }
 	},
+  watch: {
+    selectedPersonId: function(newId) {
+      if( newId === null) this.selectedPerson = null
+    }
+  },
   async created() {
     this.selectedPerson = this.personsToSee.filter( i => i.id === this.selectedPersonId)[0]
     if (this.selectedPerson) return
