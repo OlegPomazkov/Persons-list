@@ -36,8 +36,8 @@ const DATA = {
 	relatives: {
     ID_1:['ID_2'],
     ID_2:['ID_1'],
-    ID_3:['ID_1','ID_4'],
-    ID_4:['ID_1','ID_3'],
+    ID_3:['ID_4'],
+    ID_4:['ID_3'],
   }    
 } 
 

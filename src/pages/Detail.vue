@@ -117,6 +117,7 @@ export default {
   			mainId: this.selectedPersonId,
   			relativeId: this.selectedRelative.id
   		})
+  		this.selectedRelative = null
   	},
   	handleSelectChanged(id) {
   		if(!id) return
