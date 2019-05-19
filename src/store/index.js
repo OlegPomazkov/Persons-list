@@ -54,7 +54,9 @@ export default new Vuex.Store({
     },
     ADD_NEW_PERSON(state, obj) {
       state.allPersons.push(obj)
-      state.relatives[obj.id] = []
+      let newPers = { [obj.id]: []}
+
+      state.relatives = Object.assign({}, state.relatives, newPers)
     },
     UPDATE_PERSON_DATA(state, obj) {
       let num

@@ -119,7 +119,7 @@ export default {
   		})
   		this.selectedRelative = null
   	},
-  	handleSelectChanged(id) {
+  	handleSelectChanged(id) {  		
   		if(!id) return
 
   		this.$store.dispatch('setNewRelative', {
