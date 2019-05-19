@@ -71,7 +71,6 @@
 </template>
 
 <script>
-import Api from '../utils/api'
 import { mapGetters } from 'vuex' 
 import TableComponent from '../components/TableComponent' 
 import DatePicker from 'vuejs-datepicker'

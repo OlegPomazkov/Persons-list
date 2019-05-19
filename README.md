@@ -4,7 +4,12 @@
 
 ## Build Setup
 
+Clone repository
+
+
 ``` bash
+cd Persons-list/
+
 # install dependencies
 npm install
 

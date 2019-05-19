@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Api from '../utils/api'
 
 Vue.use(Vuex)
 
@@ -94,7 +95,7 @@ export default new Vuex.Store({
         if(obj.relativeId === item) num = ind
       })
       state.relatives[obj.mainId].splice(num, 1)
-      
+
       // Delete relationships from deleted relative too
       num = -1
       state.relatives[obj.relativeId].forEach( (item, ind) => {

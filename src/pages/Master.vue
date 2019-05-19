@@ -77,7 +77,6 @@
 
 <script>
 import CONFIG from '../utils/dataConfig'
-import Api from '../utils/api'
 import { mapGetters } from 'vuex' 
 import TableComponent from '../components/TableComponent' 
 import FilterComponent from '../components/FilterComponent'
